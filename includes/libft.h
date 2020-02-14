@@ -6,7 +6,7 @@
 /*   By: mderoir <mderoir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:33:10 by mderoir           #+#    #+#             */
-/*   Updated: 2020/02/14 11:08:53 by mderoir          ###   ########.fr       */
+/*   Updated: 2020/02/14 11:17:44 by mderoir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int				ft_strlen(const char *s);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				ft_lstsize(t_list *lst);
+int     		ft_power(int nb, int exponent);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				get_next_line(int const fd, char **line);
@@ -74,6 +75,7 @@ void			ft_putchar(char c);
 void			ft_putendl(char *s);
 void			ft_putnbr(int n);
 void			ft_putnbr_hex(int nb, char c);
+void			ft_putadd(intptr_t ptr);
 void			*ft_calloc(size_t count, size_t size);
 void			ft_lstadd_front(t_list **alst, t_list *new);
 void			ft_lstadd_back(t_list **alst, t_list *new);

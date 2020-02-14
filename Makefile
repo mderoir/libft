@@ -49,7 +49,9 @@ SRCS    = 	src/ft_atoi.c \
  			src/ft_lstnew.c \
  			src/ft_lstsize.c \
 			src/ft_putnbr_hex.c \
-			src/ft_isupper.c
+			src/ft_isupper.c \
+			src/ft_power.c	\
+			src/ft_putadd.c
 
 ############## FLAGS ##################
 
