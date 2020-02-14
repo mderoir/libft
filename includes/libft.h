@@ -6,7 +6,7 @@
 /*   By: mderoir <mderoir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:33:10 by mderoir           #+#    #+#             */
-/*   Updated: 2020/02/14 10:21:32 by mderoir          ###   ########.fr       */
+/*   Updated: 2020/02/14 11:08:53 by mderoir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int				ft_isalpha(int c);
 int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
+int				ft_isupper(char c);
 int				ft_strlen(const char *s);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
@@ -72,6 +73,7 @@ void			ft_putstr(char *s);
 void			ft_putchar(char c);
 void			ft_putendl(char *s);
 void			ft_putnbr(int n);
+void			ft_putnbr_hex(int nb, char c);
 void			*ft_calloc(size_t count, size_t size);
 void			ft_lstadd_front(t_list **alst, t_list *new);
 void			ft_lstadd_back(t_list **alst, t_list *new);
