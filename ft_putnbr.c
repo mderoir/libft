@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mderoir <mderoir@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/04 13:19:00 by mderoir           #+#    #+#             */
-/*   Updated: 2019/11/11 17:38:14 by mderoir          ###   ########.fr       */
+/*   Created: 2019/11/05 15:46:54 by mderoir           #+#    #+#             */
+/*   Updated: 2020/02/14 10:20:38 by mderoir          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putnbr(int n)
 {
-	int			i;
+	unsigned int nombre;
 
-	i = 0;
-	while (s[i])
+	if (n < 0)
 	{
-		if (s[i] == c)
-			return ((char *)&s[i]);
-		i++;
+		nombre = -n;
+		ft_putchar('-');
 	}
-	if (c == '\0')
-		return ((char *)&s[i]);
-	return (0);
+	else
+		nombre = n;
+	if (nombre >= 10)
+		ft_putnbr(nombre / 10);
+	ft_putchar(nombre % 10 + 48);
 }
