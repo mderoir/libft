@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_hex.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mderoir <mderoir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 15:50:42 by mderoir           #+#    #+#             */
-/*   Updated: 2020/02/14 11:05:53 by mderoir          ###   ########.fr       */
+/*   Updated: 2020/10/23 19:20:31 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr_hex(int nb, char c)
 	}
 	else
 		nombre = nb;
-	if (nombre >= nbase)
+	if (nombre >= (unsigned)nbase)
 		ft_putnbr_hex(nombre / nbase, c);
     ft_isupper(c) ? ft_putchar(base_up[nombre % nbase]) : ft_putchar(base_low[nombre % nbase]);
 }

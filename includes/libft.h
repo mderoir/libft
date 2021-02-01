@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mderoir <mderoir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/05 13:33:10 by mderoir           #+#    #+#             */
-/*   Updated: 2020/02/14 11:17:44 by mderoir          ###   ########.fr       */
+/*   Updated: 2020/10/26 14:52:30 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strdup(const char *s1);
 char			**ft_split(char const *s, char set);
+char			*ft_unsitoa(unsigned int n);
+char			*ft_str_tolower(char *str);
 char			*ft_strnstr(const char *haystack, const char *needle,
 														size_t len);
 
@@ -43,7 +45,8 @@ int				ft_isascii(int c);
 int				ft_isdigit(int c);
 int				ft_isprint(int c);
 int				ft_isupper(char c);
-int				ft_strlen(const char *s);
+char		*ft_ull_base(unsigned long long ull, int base);
+size_t				ft_strlen(const char *s);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				ft_lstsize(t_list *lst);
@@ -71,7 +74,7 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putstr(char *s);
-void			ft_putchar(char c);
+int			ft_putchar(char c);
 void			ft_putendl(char *s);
 void			ft_putnbr(int n);
 void			ft_putnbr_hex(int nb, char c);

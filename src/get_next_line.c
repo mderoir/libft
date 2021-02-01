@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mderoir <mderoir@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/18 11:28:31 by mderoir           #+#    #+#             */
-/*   Updated: 2020/02/14 09:45:15 by mderoir          ###   ########.fr       */
+/*   Updated: 2020/10/23 19:19:42 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ int		line_cpy(int const fd, char **line, char **str)
 
 int		get_next_line(int const fd, char **line)
 {
-	static char	*str[OPEN_MAX];
+	static char	*str[_SC_OPEN_MAX];
 	char		*tmp;
 	char		buffer[BUFFER_SIZE + 1];
 	int			octet_read;

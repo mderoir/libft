@@ -16,6 +16,7 @@ SRCS    = 	src/ft_atoi.c \
  			src/ft_memmove.c \
  			src/ft_memset.c \
  			src/ft_putchar_fd.c \
+			src/ft_putchar.c \
  			src/ft_putendl_fd.c \
  			src/ft_putnbr_fd.c \
  			src/ft_putstr_fd.c \
@@ -51,6 +52,9 @@ SRCS    = 	src/ft_atoi.c \
 			src/ft_putnbr_hex.c \
 			src/ft_isupper.c \
 			src/ft_power.c	\
+			src/ft_unsitoa.c \
+			src/ft_str_tolower.c \
+			src/ft_ull_base.c\
 			src/ft_putadd.c
 
 ############## FLAGS ##################
